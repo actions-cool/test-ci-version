@@ -402,7 +402,7 @@ const core = __nccwpck_require__(186);
 
 async function run() {
   try {
-    console.log('v1.0.0');
+    console.log('v1.0.1');
   } catch (error) {
     core.setFailed(error.message);
   }
