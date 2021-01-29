@@ -8,6 +8,6 @@ jobs:
   issue-test:
     runs-on: ubuntu-latest
     steps:
-      - name: help wanted
+      - name: test
         if: github.event.label.name == 'test-ci-version'
-        uses: actions-cool/test-ci-version@v1.0.0
+        uses: actions-cool/test-ci-version@v1.0.1
