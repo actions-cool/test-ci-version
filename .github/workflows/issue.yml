@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: test
         if: github.event.label.name == 'test-ci-version'
-        uses: actions-cool/test-ci-version@v1.0
+        uses: actions-cool/test-ci-version@v1
