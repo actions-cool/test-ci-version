@@ -35,4 +35,25 @@ https://github.com/actions-cool/test-ci-version/issues/1
 
 https://github.com/marketplace/actions/checkout
 
-经常看到 `actions/checkout@v2` `actions/checkout@v1`，发现 actions/checkout 库并没有对应 v2 发布版和 v2 分支。真就官方给自己开挂了？
+经常看到 `actions/checkout@v2` `actions/checkout@v1`，发现 actions/checkout 库并没有对应 v2 发布版和 v2 分支。
+
+## 答案
+
+答案在 tag 上。
+
+`actions/checkout` 每次 release 后，会删除原有大版本 tag，再新建 tag。
+
+操作如下：
+
+```sh
+# 删除 v1 tag
+git push origin :refs/tags/v1
+# 把最新的 v1.1.0 推送到 远端 v1 tag
+git push origin v1.1.0:v1
+```
+
+这样就实现了 v1 tag 保持最新 release 功能。还有一种思路是 新建 v1 分支。master 分支代码合并到 v1 分支里。
+
+![](./1.png)
+
+![](./2.png)
