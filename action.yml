@@ -1,6 +1,6 @@
 # https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
-name: 'Action JS Template'
-description: 'A simple javascript template for rapid development of GitHub actions.'
+name: 'Test CI Version'
+description: 'A test used by the Action version.'
 author: 'xrkffgg'
 
 branding:
