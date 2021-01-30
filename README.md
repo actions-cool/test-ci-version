@@ -43,6 +43,8 @@ https://github.com/marketplace/actions/checkout
 
 `actions/checkout` 每次 release 后，会删除原有大版本 tag，再新建 tag。
 
+- 当已拥有 v1 tag 后，若新建分支 v1，则 action 会使用 v1 分支代码。
+
 操作如下：
 
 ```sh
