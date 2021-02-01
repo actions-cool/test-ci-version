@@ -1,8 +1,8 @@
 name: Issue Test
 
 on:
-  issues:
-    types: [labeled]
+  pull_request:
+    types: [ready_for_review, edited]
 
 jobs:
   issue-test:
