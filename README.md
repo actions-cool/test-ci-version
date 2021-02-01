@@ -24,6 +24,7 @@ https://github.com/actions-cool/test-ci-version/issues/1
 - Out: Unable to resolve action `actions-cool/test-ci-version@v1.0`, unable to find version `v1.0`
 
 ---
+
 - In: v1
 - Out: Unable to resolve action `actions-cool/test-ci-version@v1`, unable to find version `v1`
 
